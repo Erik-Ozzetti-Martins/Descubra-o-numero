@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Acerte o numero</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+
+            <div>
+                <h1>Acerte o numero </h1>
+            </div>
+            <div class="box">
+                <p>Voce deve chutar numero  entre 0 e  9 </p>
+                
+                <div class="input-control">
+                    <label> digite o numero</label> 
+                    <input id="numero" type="number" min="0" max="9" name="jogo" />
+                    <p id="tente">Tentativas:0</p>
+                    <button onclick="calcular()">Jogar</button>
+                </div>
+
+                <div id="status"></div>
+                <div id="resultado"></div>
+            </div>
+
+        </div>
+        <div id="id">
+            <button  ondblclick="resete()">Jogar Novament</button>
+    
+        </div>
+
+        </div>
+
+    <script src="./src/script/main.js"></script>
+</body>
+</html>
